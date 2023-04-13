@@ -1,0 +1,5 @@
+<h1>Employee Master<h1>
+    Just a basic employee master with CRUD operations.
+    tech stack used: Python, Flask, MySQL, HTML
+
+    Note: There is no css in the project, so it looks ugly. I made this for an internship interview.

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <h1>Employee Master</h1>
+
+  {% if key_error %}
+  <div class="alert-danger" role="alert">
+    <strong>{{ key_error }}</strong>
+  </div>
+  {% endif %}
+
+  <form action='{{ url_for("insert") }}' method="post">
+    <input type="text" name="name1" placeholder="name" required /><br /><br />
+
+    <input type="int" name="id1" placeholder="ID" required /><br /><br />
+
+    <input type="text" name="role" placeholder="role" required /><br /><br />
+
+    <input
+      type="tel"
+      name="contact"
+      placeholder="contact"
+      required
+    /><br /><br />
+
+    <input
+      type="text"
+      name="address"
+      placeholder="address"
+      required
+    /><br /><br />
+
+    <a href="/insert">
+      <input type="submit" class="btn" value="insert" />
+    </a>
+  </form>
+
+  <a href="/commit">
+    <input type="submit" class="btn" value="commit" />
+  </a>
+
+  <a href="/undo">
+    <input type="submit" class="btn" value="undo" />
+  </a>
+
+  <a href="/">
+    <input type="submit" class="btn" value="home" />
+  </a>
+
+  <div>
+    <br />
+    <h3>
+      Commit only if you are sure you want these changes in your database!!
+    </h3>
+  </div>
+</html>

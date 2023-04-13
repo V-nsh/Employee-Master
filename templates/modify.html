@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <h1>Employee Master</h1>
+
+  <div>
+    <label>{{ msg }} </label>
+  </div>
+
+  <form action='{{ url_for("modify") }}' method="post">
+    <input type="int" name="id1" placeholder="ID" required /><br /><br />
+
+    <input type="text" name="name1" placeholder="name" required /><br /><br />
+
+    <input type="text" name="role" placeholder="role" required /><br /><br />
+
+    <input
+      type="tel"
+      name="contact"
+      placeholder="contact"
+      required
+    /><br /><br />
+
+    <input
+      type="text"
+      name="address"
+      placeholder="address"
+      required
+    /><br /><br />
+
+    <a href="/modify">
+      <input type="submit" class="btn" value="modify" />
+    </a>
+  </form>
+
+  <a href="/commit">
+    <input type="submit" class="btn" value="commit" />
+  </a>
+
+  <a href="/undo">
+    <input type="submit" class="btn" value="undo" />
+  </a>
+
+  <a href="/">
+    <input type="submit" class="btn" value="home" />
+  </a>
+
+  <div>
+    <br />
+    <h3>
+      Commit only if you are sure you want these changes in your database!!
+    </h3>
+  </div>
+</html>
