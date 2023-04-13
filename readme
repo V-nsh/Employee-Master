@@ -1,4 +1,4 @@
-<h1>Employee Master<h1>
+Employee Master
     Just a basic employee master with CRUD operations.
     tech stack used: Python, Flask, MySQL, HTML
 
